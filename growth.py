@@ -39,7 +39,7 @@ if uploaded_files:
 
 #file detail
 st.write(" preview the head of the Dataframe")
-st.dataframe"(df.head())   
+st.dataframe(df.head())
 
 # data cleaning options
 st. subheader("Data cleaning options") 
@@ -74,12 +74,12 @@ if st.checkbox(f"Clean data for {file.name}"):
         if st.button(f"convert{file.name}"):
             buffer = BytesIo()
             if conversion_type == "CSV":
-                df.to.csv(buffer, index=false)
+                df.to.csv(buffer, index=False)
                 file_name = file.name.replace(file_ext, ".csv")
                 mine_type = "text/csv"
 
             elif conversion_type == "Excel":
-                df.to.to_excel(buffer, index=false)
+                df.to.to_excel(buffer, index=False)
                 file_name = file.name.replace(file_ext, ".xlsx")
                 mime_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.shwwt"
                 buffer.seek(0)
