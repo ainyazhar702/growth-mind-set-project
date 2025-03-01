@@ -1,9 +1,9 @@
 import streamlit as st
-import panadas as pd 
+import pandas as pd 
 import os 
-import io import BytesIo 
+from io import BytesIo 
 
-st.set_page_config(page_titel== "Data sweeper" ,layout='wide') 
+st.set_page_config(page_titel="Data sweeper" ,layout='wide') 
 
 #custom css
 st.markdown(
